@@ -23,7 +23,7 @@ final class LoggerPlugin implements Plugin
 
     private $formatter;
 
-    public function __construct(LoggerInterface $logger, Formatter $formatter = null)
+    public function __construct(LoggerInterface $logger, ?Formatter $formatter = null)
     {
         $this->logger = $logger;
         $this->formatter = $formatter ?: new SimpleFormatter();
